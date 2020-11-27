@@ -1,0 +1,219 @@
+@charset "utf-8";
+
+/*=================================================
+共通パーツ
+=================================================*/
+#wrapper {
+	height: auto;
+}
+/*section_title
+------------------------*/
+.section_title {
+	max-width: 620px;
+	width: 100%;
+	font-size: 28px;
+  font-weight: 600;
+  font-family: "Noto Sans Japanese", sans-serif;
+	color: #707070;
+	text-align: center;
+	border-bottom: 2px solid #E5A713;
+	margin: 0 auto 56px;
+	padding-bottom: 10px;
+}
+.section_title.coler01 { color: #707070; border-bottom: 3px solid #6C6A65; }
+.section_title.coler02 { color: #000000; border-bottom: 3px solid #6C6A65; }
+@media(max-width:767px){
+	.section_title {
+		font-size: 1.5rem;
+		margin:  0 auto 40px;
+	}
+}
+/*entryBtn
+------------------------*/
+.entryBtn_sec  {
+	max-width: 950px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 88px;
+	margin-left: -150px;
+	margin-top: -20px;
+}
+.entryBtn {
+	width: 400px;
+	text-align: center;
+	margin-left: 150px;
+	margin-top: 20px;
+}
+.entryBtn  {
+	font-size: 19px;
+	color: #707070;
+}
+.entryBtn:last-child {
+	margin-right: 0;
+}
+.entryBtn a {
+	display: block;
+	background-color: #E5A713;
+	text-decoration: none;
+	width: 100%;
+	font-size: 25px;
+  font-weight: 600;
+  font-family: "Noto Sans Japanese", sans-serif;
+	color: #fff;
+	padding: 17px;
+	transition: all .3s;
+}
+.entryBtn a:hover {
+  background: #17BEBB;
+}
+@media(max-width:767px){
+	#entryBtn_sec {
+		margin-bottom: 70px;
+	}
+	.entryBtn a {
+		font-size: 1.25rem;
+		padding: 13px;
+	}
+}
+/*ul
+------------------------*/
+ul.dottedList {
+	margin-left: 1.5em;
+}
+ul.dottedList li{
+  list-style-type: none;
+  text-indent: -1.5em;
+}
+ul.dottedList li::before {
+	content: "・";
+	padding-right: 0.5em;
+}
+/*=================================================
+information
+=================================================*/
+#information {
+	text-align: center;
+	max-width: 1180px;
+	margin: 0 auto;
+	padding: 0 25px;
+}
+#information_title {
+	max-width: 685px;
+	width: 100%;
+	display: inline-block;
+	font-size: 25px;
+  font-weight: 600;
+  font-family: "Noto Sans Japanese", sans-serif;
+	color: #707070;
+	font-weight: bold;
+	text-align: center;
+	padding: 17px;
+	border-top: 2px solid #E5A713;
+	border-bottom: 2px solid #E5A713;
+	margin-bottom: 19px;
+}
+#information_image {
+	margin-bottom: 26px;
+}
+#information_text {
+	font-size: 20px;
+	color: #707070;
+	margin-bottom: 44px;
+}
+@media(max-width:767px){
+	#information_text {
+		font-size: 1.25rem;
+	}
+}
+/*=================================================
+moneyList
+=================================================*/
+#moneyList {
+	margin-bottom: 76px;
+}
+#moneyList_table {
+	max-width: 1030px;
+	margin: 0 auto;
+}
+#moneyList_table th,
+#moneyList_table td {
+	padding: 24px 40px;
+  font-weight: 600;
+  font-family: "Noto Sans Japanese", sans-serif;
+	text-align: center;
+	width: 50%;
+	border: 1px solid #E5A713;
+}
+#moneyList_table th {
+	background-color: #E5A713;
+	color: #fff;
+	font-size: 28px;
+}
+#moneyList_table td {
+	font-size: 25px;
+}
+#moneyList_table td:last-child {
+	text-align: left;
+}
+@media(max-width:767px){
+	.tableScroll {
+		overflow:auto;
+		white-space:nowrap;
+		-webkit-overflow-scrolling:touch
+	}
+	#moneyList_table th,
+	#moneyList_table td {
+		white-space:nowrap;
+		padding: 15px 20px;
+		font-size: 1.25rem;
+	}
+}
+/*=================================================
+methodList
+=================================================*/
+#methodList {
+	margin-bottom: 54px;
+}
+#methodList_table {
+}
+#methodList_table th {
+	font-size: 24px;
+	text-align: left;
+	vertical-align: top;
+	color: #707070;
+	background: #EBEAEA;
+	border: 1px solid #6C6A65;
+	padding: 27px 45px;
+}
+#methodList_table td {
+	font-size: 19px;
+	text-align: left;
+	color: #707070;
+	padding: 20px 37px;
+}
+@media(max-width:767px){
+	#methodList_table th,
+	#methodList_table td {
+		white-space:nowrap;
+		padding: 15px 20px;
+		font-size: 1.15rem;
+	}
+	#methodList_table td {
+		font-size: 1rem;
+	}
+}
+
+/*=================================================
+PrecautionsList
+=================================================*/
+#PrecautionsList ol {
+	font-size: 19px;
+	margin-bottom: 44px;
+}
+@media(max-width:767px){
+	#PrecautionsList ol {
+		font-size: 1rem;
+	}
+}
