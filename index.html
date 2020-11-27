@@ -1,0 +1,268 @@
+
+{extends file="index/layout.tpl"}
+{block name="main"}
+
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<meta name="description" content=""/>
+<meta name="keywords" content="" />
+<meta name="format-detection" content="telephone=no">
+<title></title>
+<!-- jQuery library -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<!--[if lte IE 8]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- CSS -->
+<link rel="stylesheet" href="css/common.css" media="all">
+<link rel="stylesheet" href="css/stylecommon.css" media="all">
+<link rel="stylesheet" href="css/style.css" media="all">
+<link rel="stylesheet" href="css/campaign.css" media="all">
+</head>
+
+<body>
+
+
+{* <!-- ▼▼▼ヘッダー＆ナビここから▼▼▼ -->
+<header>
+<div class="headwrap">
+<!-- ▼ヘッダーボタン -->
+<div class="headbtn">
+<a href="#" class="btn_chinese">中文网站</a>
+<a href="{$index_file}?task=login" class="btn_login">会員ログイン</a>
+<!-- end of headbtn --></div>
+<!-- ▼ロゴ＆グローバルナビ -->
+<nav>
+<div class="header_logo">
+<h1><a href="{$index_file}" class="nohover"><img src="img/common/logo.png" alt="五黄不動産投資ファンディング"></a></h1>
+<!-- end of header_logo --></div>
+<div class="header_nav">
+<ul class="menu">
+<li><a href="{$index_file}">ホーム</a></li>
+<li><a href="{$index_file}?task=news">お知らせ</a></li>
+<li><a href="{$index_file}?task=guide">ご利用のながれ</a></li>
+<li><a href="{$index_file}?task=faq">よくあるご質問</a></li>
+<li><a href="{$index_file}?task=aboutus">運営会社について</a></li>
+<li><a href="{$index_file}?task=contact">お問い合わせ</a></li>
+</ul>
+<!-- end of header_nav --></div>
+<div class="header_nav2">
+<a href="{$index_file}?task=regist" class="navbtn">新規会員登録</a>
+<!-- end of header_nav2 --></div>
+</nav>*}
+<!-- end of headwrap --></div>
+</header>
+<!-- ▲▲▲ヘッダー＆ナビここまで▲▲▲ -->
+
+
+<!-- ▼▼▼メイン情報枠ここから▼▼▼ -->
+<div id="wrapper">
+	<div class="sectionspace"><!--—---></div>
+		<div id="information">
+			<h2 id="information_title">本キャンペーンは<br class="sp">現在募集中です</h2>
+			<img src="img/campaign/img01.jpg" alt="ダミー画像" id="information_image">
+			<p id="information_text">
+				キャンペーン期間中に出資いただいた方に、ご出資額に応じて最大投資額の3％をプレゼントします。
+			</p>
+			<div class="entryBtn_sec">
+				<div class="entryBtn">
+					<p>＼初めての方はこちら／</p>
+					<a href="#">新規会員登録</a>
+				</div>
+				<div class="entryBtn">
+					<p>＼会員の方はこちら／</p>
+					<a href="#" >ログイン</a>
+				</div>
+			</div>
+		</div><!-- /information -->
+	<section>
+		<div id="moneyList">
+			<h2 class="section_title">ご入金額に応じたプレゼント金額表</h2>
+			<div class="tableScroll">
+				<table id="moneyList_table">
+					<thead>
+						<tr>
+							<th>投資口数</th>
+							<th>キャッシュバック利率</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1口~4口</td>
+							<td>1.0% (例：1万円→100円)</td>
+						</tr>
+						<tr>
+							<td>5口~9口</td>
+							<td>1.5% (例：5万円→750円)</td>
+						</tr>
+						<tr>
+							<td>10口~29口</td>
+							<td>2.0% (例：10万円→2,000円)</td>
+						</tr>
+						<tr>
+							<td>30口~49口</td>
+							<td>2.5% (例：30万円→7,500円)</td>
+						</tr>
+						<tr>
+							<td>50口以上</td>
+							<td>3.0% (例：50万円→15,000円)</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div><!-- moneyList -->
+
+		<div id="methodList">
+			<h2 class="section_title coler01">ご入金額に応じたプレゼント金額表</h2>
+			<div class="tableScroll">
+				<table id="methodList_table">
+					<tbody>
+						<tr>
+							<th>対象</th>
+							<td>当キャンペーンの対象は「五黄ファンド」のお客様です。</td>
+						</tr>
+						<tr>
+							<th>キャンペーン期間</th>
+							<td>初号ファンド募集終了まで</td>
+						</tr>
+						<tr>
+							<th>特典</th>
+							<td>キャンペーン期間中に投資頂いた投資口数に応じて上記の金額をプレゼント</td>
+						</tr>
+						<tr>
+							<th>適用条件</th>
+							<td>
+								<ul class="dottedList">
+									<li>初号ファンドに投資を行う</li>
+									<li>キャンペーン期間中に最低1口1万円以上の出資を行う</li>
+								</ul>
+							</td>
+						</tr>
+						<tr>
+							<th>プレゼント方法</th>
+							<td>初号ファンドの1度目の分配金配布時に上乗せして入金いたします。 <br class="sp">手続きの都合により前後する場合があります。</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div><!-- methodList -->
+
+		<div id="PrecautionsList">
+			<h2 class="section_title coler02">注意事項</h2>
+			<ol>
+				<li>以下の場合、当キャンペーンの対象外となります。
+						<ul class="dottedList">
+							<li>法人のお客様の場合 ・名義貸しや名義借りが判明した場合 </li>
+							<li>現金プレゼントの入金までに、口座解約のお申し出がされている場合</li>
+						</ul>
+				</li>
+				<li>出資申し込みには1週間程度の期間が必要です。</li>
+				<li>連休中に出資申し込みいただいた場合は、通常より手続きにお時間をいただくことがございます。</li>
+				<li>当社の判断により、出資申し込みをお断りすることがあります。</li>
+				<li>当キャンペーンは事前の予告なしに中止・変更される場合があります。</li>
+				<li>当キャンペーンにて受け取った現金プレゼントは、課税対象になる場合があります。</li>
+				<li>税に関する詳細は税務署ならびに税理士などの専門家にお問い合わせください。 </li>
+				<li>当キャンペーンの特典の対象になった方も、他のキャンペーンの条件を満たした場合は、そのキャンペーンの特典の対象になります。</li>
+			</ol>
+			<div class="entryBtn_sec">
+				<div class="entryBtn">
+					<p>＼初めての方はこちら／</p>
+					<a href="#">新規会員登録</a>
+				</div>
+				<div class="entryBtn">
+					<p>＼会員の方はこちら／</p>
+					<a href="#" >ログイン</a>
+				</div>
+			</div>
+		</div><!-- PrecautionsList -->
+		<div class="spacer"><!--—---></div>
+	</section>
+<!-- end of wrapper --></div>
+<!-- ▲▲▲メイン情報枠ここまで▲▲▲ -->
+
+
+<!-- あなたのスタイルに合わせた不動産投資 -->
+{if !$smarty.session.is_index_login}
+<div class="yourstyle">
+<section>
+<div class="centerfix">
+<img src="img/common/touch.png" class="resize120 imgspace_btm">
+<h2 class="white LLLL gothic b">あなたのスタイルに<br class="spbr">合わせた不動産投資</h2>
+</div>
+<div class="spacer15"><!—-></div>
+<center>
+<h3 class="white gothic">いつでもどこでもスマホで投資管理が可能なファンディングサービス。<br class="pcbr">
+福岡・九州を中心に、日本国内の新しい投資物件や時代を先取りした物件など、<br class="pcbr">
+魅力ある投資物件情報とサポートを皆様へお届けします。</h3>
+</center>
+<div class="centerfix"><a href="{$index_file}?task=regist" class="btn_goregist2">まずは会員登録</a></div>
+</section>
+<!-- end of yourstyle --></div>
+{/if}
+
+
+{* <!-- ▼▼▼共通フッターここから▼▼▼ -->
+<footer>
+<div class="footwrap">
+
+<div class="foot">
+
+<div class="foot_logo">
+<a href="{$index_file}" class="nohover"><img src="img/common/logo2.png" alt="五黄不動産投資ファンディング"></a>
+<!--end of foot_logo --></div>
+
+<div class="foot_link">
+<ul class="footlinks">
+<li><a href="{$index_file}" class="footlink">ホーム</a></li>
+<li><a href="{$index_file}?task=news" class="footlink">お知らせ</a></li>
+<li><a href="{$index_file}?task=guide" class="footlink">ご利用のながれ</a></li>
+<li><a href="{$index_file}?task=faq" class="footlink">よくあるご質問</a></li>
+<li><a href="{$index_file}?task=aboutus" class="footlink">運営会社について</a></li>
+<li><a href="{$index_file}?task=contact" class="footlink">お問い合わせ</a></li>
+<li><a href="{$index_file}?task=privacy" class="footlink">個人情報保護方針</a></li>
+<li><a href="{$index_file}?task=solicitation" class="footlink">勧誘方針</a></li>
+<li><a href="{$index_file}?task=antisocial" class="footlink">反社会的勢力に対する基本方針</a></li>
+<li><a href="{$index_file}?task=risks" class="footlink">主なリスクについて</a></li>
+</ul>
+<!--end of foot_link --></div>
+
+<!--end of foot --></div>
+
+<p class="copyright centerfix">Copyright &copy;株式会社五黄不動産 All rights reserved.</p>
+
+<!--end of footwrap --></div>
+</footer>
+<!--▲▲▲共通フッターここまで▲▲▲ --> *}
+
+
+<!-- ▼▼▼jQueryプラグインここから▼▼▼ -->
+<!-- jQueryグローバルナビ -->
+<script src="js/slicknav.js"></script>
+<script style="text/javascript">
+jQuery(window).load(function(){
+jQuery('.menu').slicknav({
+closeOnClick: true
+});
+})(jQuery);
+</script>
+<!-- jQueryスムーズスクロール -->
+<script src="js/scroll.js"></script>
+<div id="jumptop"><div class="jumpbtn"></div></div>
+<!-- flexboxブラウザ対応 -->
+<script src="js/flexibility.js"></script>
+<!-- ▲▲▲jQueryプラグインここまで▲▲▲ -->
+
+
+</body>
+</html>
+
+{/block}
+{block name="javascript"}
+<script>
+</script>
+{/block}
